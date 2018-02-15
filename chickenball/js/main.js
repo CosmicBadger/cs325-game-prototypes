@@ -119,8 +119,6 @@ window.onload = function() {
 
         // Begin on a pause
         set();
-
-        
     }
 
     // Used to pause phsyics (code taken from https://phaser.io/examples/v2/arcade-physics/global-pause)
@@ -139,8 +137,7 @@ window.onload = function() {
     }
 
     function launch()
-    {
-        
+    {   
         var mouseX = event.clientX;
         var mouseY = event.clientY;
         if(catchFlag == true)
@@ -181,7 +178,6 @@ window.onload = function() {
             blacksSunk++;
             text.text = 'White: ' + whitesSunk + ' ; Black: ' + blacksSunk;
         }
-
     }
     
     function update()
@@ -198,6 +194,5 @@ window.onload = function() {
             analog.rotation = arrow.rotation - 3.14 / 2;
             launchVelocity = analog.height;
         }   
-
     }
 };
