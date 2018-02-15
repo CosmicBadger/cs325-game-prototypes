@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Let's play Chickenball!</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Chickenball</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+My game was devised as a sort of "solitaire pool" in which the balls never stop moving. Players have to pause the game, get a handle on the state of the board and then make a decision about where to shoot the eggball. It is also, of course, chicken themed. All art and music was drawn/written by me.
+</li>
+
+<li><strong>Technical Merit:</strong>
+My game uses the Arcade Physics engine to create sprites which can bounce off of each other, fall into holes, be steered in terms of their direction and velocity by the mouse pointer, and then be paused by the space bar.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+For some reason, of all things, I really struggled figuring out how to get mouse pointer x/y coordinates using Phaser and wound up using plain-old Javascript instead. I learned my way around the physics engine, especially how to manage collisions and send data regarding interactions between sprites to different functions.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+By the end of the project my code was mostly original, but I borrowed heavily from these tutorials, especially in the beginning:
+- Launcher: http://phaser.io/examples/v2/arcade-physics/launcher
+- Nested Group: https://phaser.io/examples/v2/arcade-physics/nested-group
+- Follow Mouse: https://phaser.io/examples/v2/input/follow-mouse
+- 
+
+<ul>
+<li>Bouncing Phaser image: <a href="https://phaser.io/download/logo">Phaser logo</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+My game closesly resembles "analog" pool, but with certain game-changing quirks allowed for by a digital setting.
+</li>
+
+<li><strong>High Concept:</strong>
+Chicken-themed, single-player, pool where the balls never stop moving.
+</li>
+
+<li><strong>Theme:</strong>
+I was inspired by the "chicken" theme to make adorable chicken-themed balls. 
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Genre-wise I would describe the game as simply "arcade", with the playstyle being simple enough that anyone who's used a computer in their life should be able to figure it out quickly and play it.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This prototype evaluates two simple mechanics: using projectiles to direct other moving projectiles and "stopping time" to evaluate a dynamic board situation.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to take their time in making decisions about where to shoot the ball and be able to discover certain strategies that work and that do not. 
+</li>
+
+<li><strong>Gameplay:</strong>
+This game takes place on a square board with a hole near each corner, and populated by 20 chicken-themed balls, 10 white and 10 black. The player's goal is to sink aLL white chickens while sinking as few black chickens as possible. S/he does this by clicking near to a plain white ball (called the "eggball"), launching it in the direction opposite that s/he clicked- the velocity is proportional to the distance of the click from the ball. If, in the process of attempting to sink white chickens, the player accidentally sinks the eggball, s/he loses. 
+</li>
+
+<li><strong>Strategies:</strong>
+Being meticulous rather than lazy and frequently pausing the game to evaluate the board will be most effective. I'm not aware of any particular strategies at them moment, but I'm reasonably confident they can be developed.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+My game is about a college student, tired from constant studying and longing for a break, turning to her favorite video game- Chickenball. Even coming off an all-nighter, a botched midterm, and a nasty breakup, the sight of happy little chickens bouncing about a green backdrop brings a smile to her face.
+</li>
+
+<li><strong>Target Audience:</strong>
+My game appeals to the "short attention span" audience. It's easy to learn and takes litte time to play, like Agar.io or other small web games. For this reason, it appeals to the broad demographic of anyone with a small amount of time to kill between classes, waiting on the bus, etc..
+</li>
+
+<li><strong>Play Time:</strong>
+Roughly 2-5 minutes.
+</li>
+
+</ul>
+
+</div>
+</body>
+</html>
