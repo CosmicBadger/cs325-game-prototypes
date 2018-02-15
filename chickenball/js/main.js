@@ -75,7 +75,6 @@ window.onload = function() {
 
         // CREATE EGGBALL
         eggball = sprites.create(370, 375,'eggball');
-        // eggball.body.velocity.set(500,500);
 
         // CREATE HOLES
         holes = game.add.physicsGroup(Phaser.Physics.ARCADE);
@@ -104,13 +103,6 @@ window.onload = function() {
         sprites.setAll('body.collideWorldBounds', true);
         sprites.setAll('body.bounce.x', 1);
         sprites.setAll('body.bounce.y', 1);
-
-        // ENABLE EGGBALL INPUT
-        // eggball.inputEnabled = true;
-        // eggball.input.start(0, true);
-        // eggball.events.onInputDown.add(set);
-        // eggball.events.onInputUp.add(launch);
-        // eggball.events.onInputDown.add(launch);
 
         // ENABLE MOUSE INPUT
         game.input.mouse.capture = true;
@@ -202,9 +194,7 @@ window.onload = function() {
         if (catchFlag == true)
         {     
             arrow.alpha = 1;    
-
             analog.rotation = arrow.rotation - 3.14 / 2;
-            // analog.height = game.physics.arcade.distanceToPointer(arrow);  
             launchVelocity = analog.height;
         }   
 
