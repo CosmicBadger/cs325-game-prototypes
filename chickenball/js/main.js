@@ -118,6 +118,7 @@ window.onload = function() {
         alert("Welcome to Chickenball! Your goal is to sink all the white chickens into holes while sinking as few black chickens as possible. You do this by pausing the screen (by clicking the spacebar) and then clicking behind the 'eggball', the white ball at the center of the screen. This will launch it forward with a velocity proportional to the distance between your cursor and the ball, hopefully knocking white chickens into the holes. But be careful- if you sink the eggball, you lose!");
 
         // Begin on a pause
+        catchFlag = false;
         set();
     }
 
@@ -129,11 +130,14 @@ window.onload = function() {
 
     function set()
     {
-        eggball.body.moves = false;
-        eggball.body.velocity.setTo(0, 0);
-        catchFlag = true;
-        // pause physics
-        togglePause();
+        if(catchFlag == false)
+        {
+            eggball.body.moves = false;
+            eggball.body.velocity.setTo(0, 0);
+            catchFlag = true;
+            // pause physics
+            togglePause();
+        } 
     }
 
     function launch()
