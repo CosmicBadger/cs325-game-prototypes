@@ -93,7 +93,8 @@ window.onload = function() {
         analog.alpha = 0;
         analog.anchor.setTo(0.5, 0.0);
 
-        // // CREATE 'ARROW' (code taken from https://phaser.io/examples/v2/arcade-physics/launcher#download)
+        // CREATE 'ARROW' (code taken from https://phaser.io/examples/v2/arcade-physics/launcher#download)
+        // NOTE: Image is actually the Pause button, NOT an arrow. Change to var name was not made due to time constraints.
         arrow = game.add.sprite(400, 350, 'arrow');
         game.physics.enable(arrow, Phaser.Physics.ARCADE);
         arrow.anchor.setTo(0.1, 0.5);
@@ -120,8 +121,6 @@ window.onload = function() {
         // Begin on a pause
         catchFlag = false;
         set();
-
-        
     }
 
     // Used to pause phsyics (code taken from https://phaser.io/examples/v2/arcade-physics/global-pause)
@@ -143,8 +142,7 @@ window.onload = function() {
     }
 
     function launch()
-    {
-        
+    {   
         var mouseX = event.clientX;
         var mouseY = event.clientY;
         if(catchFlag == true)
@@ -185,7 +183,6 @@ window.onload = function() {
             blacksSunk++;
             text.text = 'White: ' + whitesSunk + ' ; Black: ' + blacksSunk;
         }
-
     }
     
     function update()
@@ -202,6 +199,5 @@ window.onload = function() {
             analog.rotation = arrow.rotation - 3.14 / 2;
             launchVelocity = analog.height;
         }   
-
     }
 };
