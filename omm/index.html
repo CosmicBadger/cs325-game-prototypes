@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello! Amaze!</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Your game title</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+My game combines Clue-like information gathering and guessing mechanics with the relative simplicity of a quick card game.
+</li>
+
+<li><strong>Technical Merit:</strong>
+My game is more demanding in terms of logic compared with my previous projects, which have leaned more on utilizing Phaser's capabilities. The game utilizes a random animal generator, multiple arrays full of unique animals, the ability to compare them with each other, and take action on the basis of those comparisons. The UI stretches the intended use of Phaser buttons and required digging through a good bit of documentation. 
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I did this project in large part to develop my comfortability with JavaScript as opposed to just Phaser. This was my first time coding a meaningful amount of logic (while-loops, for-loops, arrays, etc.) in JavaScript and it, naturally, involved of reading, trial-and-error, and patience. It was my intent to "ship" this draft with a functioning, if incompetent AI, but that wound up being a bit too heavy for only one week of time. It is my intention to iterate on this prototypical proof-of-concept and build it into a game which can actually be competitive. 
+</li>
+
+<li><strong>Prototype Assets:</strong>
+All assets drawn by me.
+<ul>
+<li></a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+When I'm actually able to get my AI up and running, I think my game will be relatively unique. I like to think of it a bit like Clue, but simplified and taking only a quarter of the time. The only borrowed code was a single line regarding generating random numbers within a designated range and it is cited within the code.
+</li>
+
+<li><strong>High Concept:</strong>
+Strategically gather information and make guesses before your opponent can.
+</li>
+
+<li><strong>Theme:</strong>
+Although I ran out of time to work on the aesthetic of the game like I would've liked to, it does (subtely) use the "soap opera" theme, which inspired the title and the cheesy story.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+This game only uses randomness to generate animals over varying types and the actual playstyle is more strategy-based than luck-based on net. Genre-wise, I suppose I would classify it loosely as "turn-based strategy".
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This version is testing a lot of the "under the hood" mechanics regarding testing objects against each other, generating random cards which won't be duplicates, grabbing from and interacting with multiple arrays, and getting buttons to interact with each other.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Up to this point, I don't think I've encountered a turn-based game in class and this one goes around all of the Phaser emphasis on physics and animation to create a more traditional/analog experience. I wanted to create a game which will make people stop and think, in a chess-like way, rather than present another arcadey experience.
+</li>
+
+<li><strong>Gameplay:</strong>
+In this game, the goal is (see: will be) to guess 3 out of 5 "conspirators" before your opponent can. Each conspirator can be one of four colors and one of four species, which you must guess correctly to reveal them. Given 16 different possible combinations, you'll need to gather information about them before guessing. This is done by using "witnesses", which also have a color and species and are compared against a chosen conspirator. The system then reveals whether the witness matched color, species, both, or neither. Both players have access to a public pool of 6 witnesses and a private pool of 2 witnesses. Using a public witness has the disadvantage of sharing information with your opponent, while private witnesses allow you to gather information discreetly. It's worth saying that the current prototype doesn't have an opponent, so as of right now, the goal is simply to guess all of the conspirators.
+</li>
+
+<li><strong>Strategies:</strong>
+After playtesting, I was relieved to find that the game isn't procedural and there is considerable room for strategy surrounding (a) investigating the conspirators out of order and (b) using a healthy mix of public and private witnesses. 
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The story and setting is supposed to be comical, combining soap-opera melodrama with an ironically happy farm setting full of unusually-pigmented animals. The story involves intrigue surrounding the disappearance of a popular goose on the farm and the player's mission to identify the conspirators.
+</li>
+
+<li><strong>Target Audience:</strong>
+My target audience is the "bored college kid" or anyone with a bit of time to kill.
+</li>
+
+<li><strong>Play Time:</strong>
+Roughly 3-5 minutes per game.
+</li>
+
+</ul>
+
+</div>
+</body>
+</html>
