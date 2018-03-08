@@ -609,8 +609,10 @@ window.onload = function()
     			maxAmountKnown = currentCount;
     			colorsEliminated = currentColorsCount;
     			speciesEliminated = currentSpeciesCount;
-    		}	
+    		}
     	}
+
+
 
     	// if Crow has a certain guess, make it
     	if(maxAmountKnown == 6)
@@ -671,7 +673,6 @@ window.onload = function()
     		// if the guess is correct
     		if((conspirators[targetID].color == colorGuess) && (conspirators[targetID].species == speciesGuess))
     		{
-
     			// set conspirator's guessed status to true
     			conspirators[targetID].guessed = true;
 
@@ -729,6 +730,20 @@ window.onload = function()
     	// if crow does not have a viable guess, use a witness
     	if(maxAmountKnown < 5)
     	{
+
+            // corrects error in which known animals are guessed by the AI
+            if(conspirators[targetID].guessed == true)
+            {
+                for(var l = 0; l < 5; l++)
+                {
+                    if(conspirators[l].guessed == false)
+                    {
+                        targetID = l;
+                        break;
+                    }
+                }
+            }
+            
     		// holds the pointer to the targeted conspirator in the knowledge bank
     		var targetConspirator = crowKnowledgeBank[targetID];
 
