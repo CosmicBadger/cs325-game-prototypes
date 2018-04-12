@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.2" orientation="orthogonal" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="64" infinite="0" nextobjectid="1">
+ <tileset firstgid="1" source="tiles.tsx"/>
+ <layer name="BackgroundLayer" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer name="GroundLayer" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztV0EOwzAIq/b/R+9aITCQAUlXW6q0Jm1tBwLZdREEQRAEQRBPxCdxnY6Ml+x1CjxNFXpP8B3h79C3w3OEs0vXjjgjPk1P9V6d9qxxSQ2ddWrSr+VVaqmqt4hvwrOWq/L+V38ex32s27OMpZzr6Lkn+I1oqua1+Dp7gfX96b200++uWtnt2ao9k36nYuz1wynQb4+GE887b/N7v3+z3wotJ/nVzuvymSouND515kB+K9f+JL8TZx/0ramcRn47atYv8xX80utuv1X/AS1uK74d+RXRtOrR24copp17qSKnUU5qY1b97YytpcWaX42x5uUyxrpjK3nRvPYM6mfIlzaG9kI1omuqxSFSp9C8lwMdiPJYdSWyXlZ+THu9c0f4snrQXvByvhMZvkz+oz3u/e5Gdo29up79xqRXybnqOdNPdnuV3Bnd2RzX1mknKvs+6kMT54sMVvR4vfYkfxpWzpLa+0/Cquan+ZSIxvQC4/+A7PmSIAiCIIjn4wvHQgOp
+  </data>
+ </layer>
+</map>
