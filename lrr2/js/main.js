@@ -265,13 +265,15 @@ window.onload = function() {
         makeWorld();
     }
 
-    function throwBread()
-    {
-        alert("X: " + sprite.body.x + "Y: " + sprite.body.y);
-        alert("Vel: " + sprite.body.speed);
-        newBread = game.add.sprite(sprite.body.X, sprite.body.Y, 'Bread');
-        // sprite.X
-    }
+    // function throwBread()
+    // {
+    //     // alert("X: " + sprite.body.x + "Y: " + sprite.body.y);
+    //     // alert("Vel: " + sprite.body.speed);
+    //     newBread = game.add.sprite(sprite.body.x, sprite.body.y, 'Bread');
+    //     newBread.body.speed = sprite.body.speed;
+    //     alert(newBread.body.speed);
+    //     // sprite.X
+    // }
 
     // code taken from: https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
     function getRandomInt(min, max) 
