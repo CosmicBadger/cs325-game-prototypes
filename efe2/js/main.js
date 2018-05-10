@@ -530,6 +530,7 @@ window.onload = function()
         swapButton.destroy();
         backupButton.destroy();
         discardButton.destroy();
+        newCardImage.destroy();
 
         // re-render the UI with the swap having been made
         renderUI();
