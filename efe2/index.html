@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello! Amaze!</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Your game title</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+My game is, as far as I can tell, a completely original solitaire card game. I didn't model it off of anything and I can't think of anything like it. I thought it was an interesting idea to do what is fundamentally a card game, but has an experience very much enhanced by digitization. My game is built around a mechanic where your "opponet" is the discard pile, and the best hand that can be constructed from that pile is what your hand has to beat at the end of the game. Digitizing saves the trouble of rifling through lots of cards to create the best hand and allows the player to watch in real time as their actions inadvertently make their opponent stronger.
+</li>
+
+<li><strong>Technical Merit:</strong>
+I had no idea what I was getting myself into with this concept and this is the most technically demanding game I've made since my "Old McDonald's Manor" assignment which required me to code an AI. This game doesn't function at all without some key algorithms- the ability to look at a huge stack of cards and build hands of various types (flush, full house, etc.), determine which hands within those subtypes are strongest (e.g. an ace-led straight is better than a 10-led straight), be able to follow poker rules surrounding the ranking of different types of hands. I'm at over 1,000 lines of code and the fundamentals are 90% there, but I still have to code the functions to identify and rank pairs and two-of-a-kind hands, plus all of the interface elements of the game. If I'd had any idea it was going to be so complicated, I would have dumbed it down much earlier.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I think I said most of what needs to be said above. This game is really complicated to code and right now I'm only able to demo the underlying functions because there's no way to play the game without all of the functions working. It's an "all or nothing" situation and after probably 12-15 hours of coding, I've made a lot of progress, but it's not enough yet.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Metal texture from "https://www.texturepalace.com/photoshop-metal-texture/"
+<ul>
+<li></a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I suppose my game is closest to Poker and Solitaire, but rule-wise, it's not a whole lot like either.
+</li>
+
+<li><strong>High Concept:</strong>
+Swap around and discard cards in a limited but unpredictable number of turns to build the best possible hand.
+</li>
+
+<li><strong>Theme:</strong>
+My game incorporates the "soldier" theme, as you have to assemble a team of soldiers to man your spaceship and break through an alien blockade of Earth. 
+</li>
+
+<li><strong>Mandated Variety:</strong>
+This game will use a turn-based system in which the number of total turns in the game is limited but random, as a die roll will slowly corrode your "time meter" and when time is out your hand must be able to beat the discard pile. This unpredictability will force certain games to follow different playstyles.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This version is literally just testing the under the hood features- namely all of the functions relating to digging through a stack of cards, building hands, and making comparisons between possible hands. 
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want the player to be able to strategize around how they discard and swap around cards.
+</li>
+
+<li><strong>Gameplay:</strong>
+In this game, you start by drawing 5 cards and put 5 cards in the discard pile (which the player can see). At the beginning of each turn, a die is rolled and the amount shown on the die is removed from your "time meter", which starts at 40 and corrodes with each turn. During each turn you may draw a card and swap it with one of the cards in your hand, though your hand is capped at 5 cards. This means you have to pick one of the two to discard and functionally give to your "opponent". You also have the option of banking up to 3 cards, but in order to move them to your hand, you must give up a turn to swap it in. When time runs out, you compare your hand to the best hand that can be constructed out of all the cards in the discard pile.
+</li>
+
+<li><strong>Strategies:</strong>
+Again, I think most of the strategy will revolve around tactical discarding and planning around how good a deck you think you can make given the speed at which time erodes.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+Earth has been blockaded by aliens and they are settign up to bombard the planet. You must board your spaceship, fly around the country, and assemble the best team of pilots you can to join you in breaking through the alien fleet and escaping before the bombardment begins.
+</li>
+
+<li><strong>Target Audience:</strong>
+My target audience is more mature players, since the game requires some knowledge of poker rules and a non-trivial amount of strategy.
+</li>
+
+<li><strong>Play Time:</strong>
+Roughly 3-5 minutes per game.
+</li>
+
+</ul>
+
+</div>
+</body>
+</html>
